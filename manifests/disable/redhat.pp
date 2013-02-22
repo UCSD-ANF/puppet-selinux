@@ -15,7 +15,7 @@ class selinux::disable::redhat {
     }
 
     # Put selinux into permissive mode until the system can be rebooted
-    if $::selinux_enforced {
+    if str2bool($::selinux_enforced) {
         exec{disable_selinux_runtime:
             command  => '/usr/sbin/setenforce Permissive',
         }
