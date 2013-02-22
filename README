@@ -6,6 +6,11 @@
 # - David Goldsmith
 # - Frank Sweeter
 
-This module is used to manage selinux stuff. Currently we mainly 
+Version ANF20130221-1
+
+This module is used to manage selinux stuff. Currently we mainly
 use it to manage selinux stuff on centos, however there are as well
 some funtions for other distros.
+
+Local modifications by gadavis@ucsd.edu to work on RedHat and set
+selinux into permissive mode until system can be rebooted
