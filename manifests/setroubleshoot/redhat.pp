@@ -1,4 +1,4 @@
-class selinux::setroubleshoot::centos {
+class selinux::setroubleshoot::redhat {
   package{'setroubleshoot-server':
     ensure => present,
   }
