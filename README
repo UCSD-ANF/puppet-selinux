@@ -6,7 +6,7 @@
 # - David Goldsmith
 # - Frank Sweeter
 
-Version ANF20130221-1
+Version ANF20130222-1
 
 This module is used to manage selinux stuff. Currently we mainly
 use it to manage selinux stuff on centos, however there are as well
@@ -14,3 +14,10 @@ some funtions for other distros.
 
 Local modifications by gadavis@ucsd.edu to work on RedHat and set
 selinux into permissive mode until system can be rebooted
+
+Module Requirements:
+* https://github.com/puppetlabs/puppetlabs-stdlib as stdlib
+
+Optional:
+* https://github.com/duritong/puppet-munin.git as munin - for optional
+  Munin integration
