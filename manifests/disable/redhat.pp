@@ -1,4 +1,4 @@
-class selinux::disable::centos {
+class selinux::disable::redhat {
     service{restorecond:
         ensure => stopped,
         enable => false,

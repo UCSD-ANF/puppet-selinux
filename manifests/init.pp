@@ -15,8 +15,8 @@
 class selinux ( 
   $manage_munin = false
 ) {
-  case $::operatingsystem {
-    centos: { include selinux::centos }
+  case $::osfamily {
+    RedHat: { include selinux::redhat }
   }
 
   if $manage_munin {

@@ -1,3 +1,3 @@
-class selinux::centos {
+class selinux::redhat {
   include selinux::setroubleshoot
 }

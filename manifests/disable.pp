@@ -6,7 +6,7 @@
 
 # disable selinux stuff
 class selinux::disable {
-    case $::operatingsystem {
-        centos: { include selinux::disable::centos }
+    case $::osfamily {
+        RedHat: { include selinux::disable::redhat }
     }
 }
