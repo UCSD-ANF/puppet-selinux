@@ -1,5 +1,5 @@
 class selinux::setroubleshoot {
-  case $::operatingsystem {
-    centos: { include selinux::setroubleshoot::centos }
+  case $::osfamily {
+    RedHat: { include selinux::setroubleshoot::redhat }
   }
 }
