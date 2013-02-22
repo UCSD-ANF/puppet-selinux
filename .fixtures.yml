@@ -1,0 +1,5 @@
+fixtures:
+  repositories:
+    munin: https://github.com/duritong/puppet-munin.git
+  symlinks:
+    selinux: "#{source_dir}"
