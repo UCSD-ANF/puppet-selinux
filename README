@@ -14,3 +14,10 @@ some funtions for other distros.
 
 Local modifications by gadavis@ucsd.edu to work on RedHat and set
 selinux into permissive mode until system can be rebooted
+
+Module Requirements:
+* https://github.com/puppetlabs/puppetlabs-stdlib as stdlib
+
+Optional:
+* https://github.com/duritong/puppet-munin.git as munin - for optional
+  Munin integration
