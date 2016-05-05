@@ -3,7 +3,7 @@ class selinux::setroubleshoot::redhat {
     ensure => present,
   }
 
-  service{'setroubleshoot':
+  service { 'setroubleshoot':
     ensure => running,
     enable => true,
     require => Package['setroubleshoot-server'],

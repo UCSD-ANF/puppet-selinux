@@ -12,11 +12,11 @@
 # the Free Software Foundation.
 #
 
-class selinux ( 
+class selinux (
   $manage_munin = false
 ) {
   case $::osfamily {
-    RedHat: { include selinux::redhat }
+    'RedHat': { include ::selinux::redhat }
   }
 
   if $manage_munin {
